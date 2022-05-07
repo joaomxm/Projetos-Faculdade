@@ -1,0 +1,118 @@
+
+.div-cria-vaga{
+    background-color: #488ef7; display: flex; align-items: center; padding: 10px; border-radius: 8px;
+}
+.div-cria-vaga a {
+
+    background-color: #488ef7 ; color: white; font-weight: 500; display: flex; align-items: center;
+}
+
+.div-table{
+    border: 1px solid #ebedf1;padding: 20px;margin: 20px; border-radius: 8px;
+}
+thead{
+    background-color: #fafafc;
+}
+thead tr{
+    color:#747d90 !important;
+}
+
+tbody tr{
+    border-bottom: 1px solid #ebedf1;
+}
+
+tbody tr td{
+padding: 15px !important;
+color: #071338;
+
+}
+.table-nome-vaga{
+    font-weight: bold;
+    color: #071338;
+}
+.table-edit-vaga span{
+    padding: 5px;
+    background-color: #f1f7fe;
+    color: #2861e8;
+    border-radius: 8px;
+}
+ .div-valor-box{
+    display: flex;
+    background-color: #fafbfc;
+    color: #071338;
+    align-items: center;
+    justify-content: center;
+    
+    width: 50%;
+
+    border-radius: 10px;
+}
+
+.span-valor-vagas-novas{
+    background-color: #d3f3ef; color: #30c7b3; border-radius: 10px;padding: 4px;font-weight: 500;
+}
+
+.div-paginate{
+    display: flex;
+    justify-content: center;
+}
+
+.div-paginate a{
+    color: black !important;
+}
+
+.link.active{
+    border: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border:0;
+    border-bottom: 1px solid #245ee7;
+    color: #245ee7;
+}
+
+.nav-link{
+    color: #bec4d2;
+}
+
+
+.card-epi-epc{
+    /* width: 500px; */
+    padding: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 300px;
+    border-radius: 10px;
+    border:1px solid #ebedf1;
+    box-shadow: 0 0 1em #ebedf1;
+    
+    
+}
+.card-epi-epc:hover{
+    background-color: #f1f7fe;
+    cursor: pointer;
+}
+
+.div-nome-atividade{
+    font-weight: bold;
+}
+
+
+.span-avaliacao-obrigatorio{
+    font-weight: 500;
+    color: red;
+}
+.span-avaliacao-recomendado{
+    font-weight: 500;
+    color: rgb(255, 145, 0);
+}
+
+.div-desc-atividade{
+    margin-top: 5px;
+}
+.div-desc-atividade span{
+    font-weight: 500;
+}
+.div-desc-atividade p{
+    font-size: 14px;
+}

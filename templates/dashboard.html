@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+
+    <title>Empresa tal</title>
+
+</head>
+
+<body>
+    <!-- Div Page -->
+    <div class="div-page">
+
+        <!-- Div Menu -->
+        <div class="div-menu">
+            <section class="section-nome-empresa">Nome da Empresa</section>
+            <small style="color: #bec4d2;">Plataforma</small>
+
+            <div style="margin-top:20px">
+                <div style="color: #bec4d2; font-size: 12px; margin-bottom: 10px;"> <span> MAIN MENU </span></div>
+
+                <div class="div-btn-menu">
+                    <div> <a href="/templates/dashboard.html"><span class="material-icons-round">grid_view</span> Dashboard</a> </div>
+                </div>
+                <div class="div-btn-menu">
+                    <div> <a href="/templates/listagem_vagas.html"><span class="material-icons-round">people</span> Recrutamento e Seleção</a> </div>
+                </div>
+                <div class="div-btn-menu">
+                    <div> <a href="/templates/listagem_normas.html"><span class="material-icons-round">fact_check</span> Normas Organizacionais</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <hr>
+            <!-- SUPPORT -->
+            <div style="position: fixed; bottom: 0; margin-bottom: 5px; font-size: 12px;">
+                <div style="color: #bec4d2; font-size: 12px; margin-bottom: 10px;"> <span> SUPPORT</span></div>
+
+                <div class="div-btn-menu-support">
+                    <div> <a href=""><span class="material-icons-round">email</span> Mensagens</a> </div>
+                </div>
+                <div class="div-btn-menu-support">
+                    <div> <a href=""><span class="material-icons-round">phone</span> Ajuda</a> </div>
+                </div>
+                <div class="div-btn-menu-support">
+                    <div> <a href=""><span class="material-icons-round">settings</span> Configurações</a> </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div style="width: 100%;">
+            <!-- Div Header -->
+            <div class="div-header">
+
+
+                <!-- Div Search -->
+                <div class="div-search">
+                    <div>
+
+                        <span class="material-icons-round icon-search">search</span>
+                        <input type="text" placeholder="Pesquisar palavras chaves">
+
+                    </div>
+                </div>
+
+                <!-- Div Notificação e Usuario -->
+                <div style="display: flex; margin-right: 30px; padding:3px; align-items: center;">
+                    <div class=" div-notifications">
+                        <span class="material-icons-round">notifications</span>
+                    </div>
+
+
+
+                    <!-- Div Dropdown Usuario -->
+                    <div style="display: flex; align-items: center;">
+                        <div class="dropdown" style="border-left: 1px solid #ebedf1;">
+                            <a class="btn dropdown-toggle dropdown-user" type="button" id="dropdownheaderUser"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="div-user-img"></div>
+                                <span class="span-name-user">Júlia Albuquerque</span>
+                                <span class="material-icons-round">
+                                    expand_more
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownheaderUser">
+                                <li>
+                                    <a class="dropdown-item" href="#" style="display: flex; align-items: center;">
+                                        <span class="material-icons-round">logout</span>
+                                        <span>Sair</span>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Div Content -->
+            <div style="padding: 30px;">
+                <!-- Titulo Content -->
+                <div class="div-titulo-dashboard">
+                    <div>
+                        <div class="titulo-page"> Dashboard </div>
+                        <span class="titulo-page-description">Informações gerais.</span>
+                    </div>
+                    
+                    <div class="div-button-filtro">
+                        <div><div class="dropdown filtro-dashboard-data">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownFiltroData" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="material-icons-round" style="color: #b3bcca; font-size: 18px; margin-right: 10px;">
+                                    schedule
+                                </span> 
+                                <span> 
+                                 30 Mai, 2022-15 Jun, 2022 </span>
+                                <span class="material-icons-round" style="color:#b3bcca;">
+                                    expand_more
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownFiltroData">
+                              <li><a class="dropdown-item" href="">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div></div>
+                        <div><div class="dropdown filtro-dashboard-data">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownFiltroCategoria" data-bs-toggle="dropdown" aria-expanded="false">
+                                
+                                <span> 
+                                 Categoria </span>
+                                <span class="material-icons-round" style="color:#b3bcca;">
+                                    expand_more
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownFiltroCategoria">
+                              <li><a class="dropdown-item" href="#">Recrutamento/Seleção</a></li>
+                              <li><a class="dropdown-item" href="#">EPI's</a></li>
+                              <li><a class="dropdown-item" href="#">Normas</a></li>
+                            </ul>
+                          </div></div>
+                        
+                    </div>
+                </div>
+
+                <!-- Div Graficos  -->
+                <div class="div-graficos"> 
+                    <div>
+                        <div><strong>Recrutamento e Seleção</strong></div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 80% 20%;">
+                        <div class="div-graficos-plot">
+                            <div style="border-radius: 10px ; border: 1px solid #ebedf1; padding: 10px;">
+                                <div style="display: flex; justify-content: space-between; padding: 10px;">
+                                    <span style="font-weight: bold;">Vagas</span>
+                                    <span style="color: #245ee7; font-weight: 500;"><a href="">Ver todas </a></span>
+                                    </div>
+                                <canvas id="chart-vagas"></canvas>
+                            </div>
+                            <div style="border-radius: 10px ; border: 1px solid #ebedf1;padding: 10px; margin-top: 20px;">
+                                <div >
+                                    <span style="font-weight: bold;">Total Funcionários Mês</span>
+                                </div>
+                                <canvas id="chart-vagas2"></canvas>
+                            </div>
+    
+    
+                        </div>
+                        
+                    <div class="div-graficos-cards">
+                        <div style="border: 1px solid #ebedf1;border-radius: 20px;">
+
+                        
+                        <div class="div-numero-vagas">
+                            <div class="div-numero-vagas-titulo" >
+
+                                <span style="color: #061237; font-weight: 600;">Vagas abertas</span>
+                                <span class="material-icons-round" style="color: #97a1b6;">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="div-numero-vagas-valores">
+                                <span style="color: #061237;">30</span>
+                                <span style="font-size: 12px; padding:5px; background-color: #edfbf7; color: #21cc9e; border-radius: 10px; margin-left: 15px;">
+                                    + 15.3% 
+                                    <span class="material-icons-round" style="font-size: 12px;">
+                                    arrow_upward
+                                    </span>
+                                </span>
+
+                            
+                            </div>
+                            <div style="font-size: 16px; color:#97a1b6 ; display: flex; align-items: center;">
+                                <span class="material-icons-outlined" style="font-size: 18px; margin-right: 10px;">
+                                    visibility
+                                    </span>
+                                    
+                                <span style="font-weight: 500;">Último mês 30</span >
+                            </div>
+
+                        </div>
+                        <div class="div-numero-vagas">
+                            <div class="div-numero-vagas-titulo" >
+
+                                <span style="color: #061237; font-weight: 600;">Total entrevistas</span>
+                                <span class="material-icons-round" style="color: #97a1b6;">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="div-numero-vagas-valores">
+                                <span style="color: #061237;">18</span>
+                                <span style="font-size: 12px; padding:5px; background-color: #edfbf7; color: #21cc9e; border-radius: 10px; margin-left: 15px;">
+                                    + 15.3% 
+                                    <span class="material-icons-round" style="font-size: 12px;">
+                                    arrow_upward
+                                    </span>
+                                </span>
+
+                            
+                            </div>
+                            <div style="font-size: 16px; color:#97a1b6 ; display: flex; align-items: center;">
+                                <span class="material-icons-outlined" style="font-size: 18px; margin-right: 10px;">
+                                    visibility
+                                    </span>
+                                    
+                                <span style="font-weight: 500;">Último mês 30</span >
+                            </div>
+
+                        </div>
+                        <div class="div-numero-vagas">
+                            <div class="div-numero-vagas-titulo" >
+
+                                <span style="color: #061237; font-weight: 600;">Candidatos recrutados</span>
+                                <span class="material-icons-round" style="color: #97a1b6;">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="div-numero-vagas-valores">
+                                <span style="color: #061237;">21</span>
+                                
+                                    <span style="font-size: 12px; padding:5px; background-color: #fff0f0; color: #ff3131; border-radius: 10px; margin-left: 15px; font-weight: bold;">
+                                        - 15.3% 
+                                        <span class="material-icons-round" style="font-size: 12px;">
+                                            
+                                            arrow_downward
+                                        </span>
+                                    </span>
+                                
+                                    
+                            </div>
+                            <div style="font-size: 16px; color:#97a1b6 ; display: flex; align-items: center;">
+                                <span class="material-icons-outlined" style="font-size: 18px; margin-right: 10px;">
+                                    visibility
+                                    </span>
+                                    
+                                <span style="font-weight: 500;">Último mês 30</span >
+                            </div>
+
+                        </div>
+                        <div class="div-numero-vagas">
+                            <div class="div-numero-vagas-titulo" >
+
+                                <span style="color: #061237; font-weight: 600;">Custo Recrutamento</span>
+                                <span class="material-icons-round" style="color: #97a1b6;">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="div-numero-vagas-valores">
+                                <span style="color: #061237; font-size: 30px;"> R$ 120.000,00</span>
+                               
+
+                            
+                            </div>
+                            <div style="font-size: 14px; color:#97a1b6 ; display: flex; align-items: center;">    
+                                <span style="font-weight: 500;"> <span style="color: #21cc9e;">20%</span> de crescimento comparado ao mês anterior</span >
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div style="border: 1px solid #ebedf1;border-radius: 20px; padding: 10px; margin-top: 20px;">
+                        <div style="color:#061237; font-weight: 500; padding: 10px; font-size: 16px;">Fúncionarios</div>
+                        <div style="display: grid; grid-template-columns: 50% 50%;">
+                            <div style="display: flex;flex-direction: column;align-items: center;">
+
+                                <div class="chart-nao-pcd" >
+                                    60%    
+                                </div>
+                                <span style="color: #b7becf; font-weight: 500;">Não PCD's</span>
+                            </div>
+                            <div style="display: flex;flex-direction: column;align-items: center;">
+
+                                <div class="chart-pcd">
+                                    20%    
+                                </div>
+                                <span style="color: #b7becf; font-weight: 500;">PCD's</span>
+                            </div>
+                        </div>
+                            
+
+
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                    </div>
+
+
+
+                    
+                    
+
+                    
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        const labels_vagas = [
+          'Dev Back-end Jr',
+          'Dev Back-end Sênior',
+          'Eng de Dados Jr',
+          'Dir de Arte',
+          'Aux Administrativo',
+        ];
+      
+        const data_vagas = {
+          labels: labels_vagas,
+          datasets: [{
+            label: false,
+            backgroundColor: [
+                '#7487eb',
+                '#ff7f21',
+                '#48d0d0',
+                '#ffd600',
+                '#f46d63',
+            
+            ],
+           
+            borderColor: 'rgb(255, 99, 132)',
+            data: [2, 10, 5, 2, 20, 30, 45],
+            barThickness: 10,
+            borderRadius:8,
+            barPercentage: 0.9,
+            categoryPercentage: 1,
+
+          }],
+          
+        };
+      
+        const config_vagas = {
+          type: 'bar',
+          data: data_vagas,
+          options: {
+            indexAxis: 'y',
+            scales: {
+                y: {
+            grid: {
+            display: false
+            }
+                },
+            },
+            plugins: {
+           
+            legend:{
+                display:false
+            }
+        }
+    
+  },
+  
+        };
+        
+        const labels_funcionario = [
+          'Jan',
+          'Fev',
+          'Mar',
+          'Abr',
+          'Mai',
+          'Jun',
+          'Jul',
+          'Ago',
+          'Set',
+          'Out',
+          'Nov',
+          'Dec',
+        ];
+      
+        const data_funcionario = {
+          labels: labels_funcionario,
+          datasets: [{
+            label: false,
+            backgroundColor: [
+                '#7487eb',
+                '#ff7f21',
+                '#48d0d0',
+                '#ffd600',
+                '#f46d63',
+            
+            ],
+           
+            borderColor: 'rgb(255, 99, 132)',
+            data: [2, 10, 5, 2, 20, 30, 45,10,58,90,51,77],
+            // barThickness: 10,
+            borderRadius:8,
+            barPercentage: 0.6,
+            categoryPercentage: 1,
+
+          }],
+          
+        };
+      
+        const config_funcionario = {
+          type: 'bar',
+          data: data_funcionario,
+          options: {
+            
+            scales: {
+                y: {
+            grid: {
+            display: false
+            }
+                },
+            },
+            plugins: {
+           
+            legend:{
+                display:false
+            }
+        }
+    
+  },
+  
+        };
+
+
+
+
+        const chartVagas = new Chart(
+            document.getElementById('chart-vagas'),
+            config_vagas
+        );
+        const chartVagas2 = new Chart(
+            document.getElementById('chart-vagas2'),
+            config_funcionario
+        );
+       
+
+
+
+    </script>
+</body>
+
+</html>

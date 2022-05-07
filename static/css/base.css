@@ -1,0 +1,117 @@
+body, html { height: 100%; margin: 0;width: 100%;}
+
+    a{
+        text-decoration: none;
+    }
+    
+
+    .div-page{
+        display: flex;
+        width: 100%;
+        background-color: white;
+    }
+    .div-menu{
+        min-height: 100vh;
+        background-color:  #f8fafb;
+        width: 300px;
+        padding: 25px;
+    }
+    
+   .div-header{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        
+        justify-content: space-between;
+        border-bottom: 1px solid #ebedf1;
+    }
+    .section-nome-empresa{
+        color: #245ee7;
+        font-weight: bold;
+    }
+    .div-btn-menu{
+          font-size: 14px;
+    }
+    .div-btn-menu-support{
+          font-size: 12px;
+    }
+    .div-btn-menu:hover, .div-btn-menu-support:hover{
+        color: #245ee7;
+    }
+
+    .div-btn-menu a, .div-btn-menu-support a{
+        display:flex; 
+        color: #061237; 
+        font-weight: 500;
+        padding: 8px;
+        border-radius: 8px;
+    }
+    .div-btn-menu a:hover, .div-btn-menu a:hover span, .div-btn-menu-support a:hover, .div-btn-menu-support a:hover span  {
+        color: #245ee7; 
+        background-color: white;
+        font-weight: 500;
+    }
+    .div-btn-menu a span, .div-btn-menu-support a span {
+        color: #96a0b5;
+        margin-right: 10px;
+    }
+
+
+    .div-search{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        
+        color: #b7becf;
+    }
+    .div-search div{
+        background-color: #fafbfc;
+        padding:10px;
+        border-radius: 8px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+
+    }
+    .div-search div input {
+        background-color: #fafbfc;
+        
+        border:none;
+        width: 100%;
+        
+
+    }
+    .icon-search{
+        color: #9ca8ba;
+    }
+    .div-user-img{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/static/img/user_profile3.jpg');
+        margin-right: 10px;   
+    }
+
+    .div-notifications{
+        margin-right: 30px; background-color: #fafafc;height: 40px;width: 40px;border-radius: 100%;display: flex;align-items: center;justify-content: center;
+    }
+    .div-notifications span{
+        color: #96a0b5;
+    }
+
+    .span-name-user{
+        font-weight: 500;
+    }
+
+    .dropdown-toggle::after{
+        display: none;
+    }
+
+    .dropdown-user{
+        display: flex; 
+        align-items: center;
+        color: #3f404c;
+    }

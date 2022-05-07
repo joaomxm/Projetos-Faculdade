@@ -1,0 +1,103 @@
+.div-titulo-dashboard{
+    display: flex;
+    justify-content: space-between;
+}
+.div-button-filtro{
+    display: flex;
+    align-items: center;
+}
+
+.titulo-page{
+    font-size: 24px;
+    color: #061237;
+    font-weight: bold;
+}
+
+.titulo-page-description{
+    color: #b7becf;
+}
+
+.filtro-dashboard-data{
+    margin-right: 10px;
+}
+
+.filtro-dashboard-data button{
+    color: #061237;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #ebedf1;
+    background-color: #fafbfc;
+}
+
+.filtro-dashboard-categoria button{
+    color: #061237;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #ebedf1;
+    background-color: #fafbfc;
+    
+}
+
+
+
+.div-graficos{
+    margin-top: 30px;
+}
+
+.div-graficos-cards{
+    margin-left: 15px;
+}
+
+.div-numero-vagas{
+    padding: 20px;
+    background-color: white;
+    /* border: 1px solid #ebedf1; */
+    border-radius: 20px;
+    
+    margin-right: 30px;
+}
+.div-numero-vagas-titulo{
+    display: flex; 
+    justify-content: space-between;
+}
+.div-numero-vagas-valores{
+    font-size: 20px;
+    font-weight: 500;
+    color: #061237;
+    display: flex;
+    align-items: center;
+}
+
+
+#chart-vagas{
+    max-width: 100%;
+    max-height:400px ;
+    padding: 10px;
+}
+#chart-vagas2{
+    max-width: 100%;
+    max-height:400px ;
+    padding: 10px;
+}
+
+
+.chart-nao-pcd{
+    width: 100px; height: 100px; border-radius: 50%; border: 10px solid #f8802a;
+                        border-top: 10px solid #ebedf1;
+                        border-left: 10px solid #ebedf1;
+                        border-right: 10px solid #f8802a;
+                        display: flex; justify-content: center;
+                        align-items: center;
+}
+.chart-pcd{
+    width: 100px; height: 100px; border-radius: 50%; border: 10px solid #ebedf1;
+                        border-top: 10px solid #ebedf1;
+                        border-left: 10px solid #ebedf1;
+                        border-right: 10px solid #7587ec;
+                        display: flex; justify-content: center;
+                        align-items: center;
+}
