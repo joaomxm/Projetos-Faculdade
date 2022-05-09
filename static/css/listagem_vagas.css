@@ -43,6 +43,11 @@ padding: 15px !important;
 color: #071338;
 
 }
+
+tbody tr td:nth-child(1){
+    cursor: pointer;
+}
+
 .table-nome-vaga{
     font-weight: bold;
     color: #071338;
@@ -77,3 +82,4 @@ color: #071338;
 .div-paginate a{
     color: black !important;
 }
+

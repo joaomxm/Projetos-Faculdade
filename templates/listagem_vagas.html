@@ -1,440 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <link rel="stylesheet" href="/static/css/listagem_vagas.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/base.css">
-    <link rel="stylesheet" href="/static/css/listagem_vagas.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    
     <title>Empresa tal</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Div Page -->
     <div class="div-page">
+      <!-- Div Menu -->
+      <div class="div-menu">
+        <section class="section-nome-empresa">Nome da Empresa</section>
+        <small style="color: #bec4d2">Plataforma</small>
 
-        <!-- Div Menu -->
-        <div class="div-menu">
-            <section class="section-nome-empresa">Nome da Empresa</section>
-            <small style="color: #bec4d2;">Plataforma</small>
+        <div style="margin-top: 20px">
+          <div style="color: #bec4d2; font-size: 12px; margin-bottom: 10px">
+            <span> MAIN MENU </span>
+          </div>
 
-            <div style="margin-top:20px">
-                <div style="color: #bec4d2; font-size: 12px; margin-bottom: 10px;"> <span> MAIN MENU </span></div>
-
-                <div class="div-btn-menu">
-                    <div> <a href="/templates/dashboard.html"><span class="material-icons-round">grid_view</span> Dashboard</a> </div>
-                </div>
-                <div class="div-btn-menu">
-                    <div> <a href="/templates/listagem_vagas.html"><span class="material-icons-round">people</span> Recrutamento e Seleção</a> </div>
-                </div>
-                <div class="div-btn-menu">
-                    <div> <a href="/templates/listagem_normas.html"><span class="material-icons-round">fact_check</span> Normas Organizacionais</a>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <hr>
-            <!-- SUPPORT -->
-            <div style="position: fixed; bottom: 0; margin-bottom: 5px; font-size: 12px;">
-                <div style="color: #bec4d2; font-size: 12px; margin-bottom: 10px;"> <span> SUPPORT</span></div>
-
-                <div class="div-btn-menu-support">
-                    <div> <a href=""><span class="material-icons-round">email</span> Mensagens</a> </div>
-                </div>
-                <div class="div-btn-menu-support">
-                    <div> <a href=""><span class="material-icons-round">phone</span> Ajuda</a> </div>
-                </div>
-                <div class="div-btn-menu-support">
-                    <div> <a href=""><span class="material-icons-round">settings</span> Configurações</a> </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
-
-        <div style="width: 100%;">
-            <!-- Div Header -->
-            <div class="div-header">
-
-
-                <!-- Div Search -->
-                <div class="div-search">
-                    <div>
-
-                        <span class="material-icons-round icon-search">search</span>
-                        <input type="text" placeholder="Pesquisar palavras chaves">
-
-                    </div>
-                </div>
-
-                <!-- Div Notificação e Usuario -->
-                <div style="display: flex; margin-right: 30px; padding:3px; align-items: center;">
-                    <div class=" div-notifications">
-                        <span class="material-icons-round">notifications</span>
-                    </div>
-
-
-
-                    <!-- Div Dropdown Usuario -->
-                    <div style="display: flex; align-items: center;">
-                        <div class="dropdown" style="border-left: 1px solid #ebedf1;">
-                            <a class="btn dropdown-toggle dropdown-user" type="button" id="dropdownheaderUser"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="div-user-img"></div>
-                                <span class="span-name-user">Júlia Albuquerque</span>
-                                <span class="material-icons-round">
-                                    expand_more
-                                </span>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownheaderUser">
-                                <li>
-                                    <a class="dropdown-item" href="#" style="display: flex; align-items: center;">
-                                        <span class="material-icons-round">logout</span>
-                                        <span>Sair</span>
-
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Div Content -->
+          <div class="div-btn-menu">
             <div>
-                <div style="display: flex; justify-content: space-between; padding: 20px;">
-                    <div style="font-size: 24px; font-weight: 500;">Listagem Vagas</div>
-                    <div class="div-cria-vaga" ><a class="a-cria-vaga" href="" >
-                        <span class="material-icons-outlined" style="margin-right: 10px;">
-                            control_point
-                            </span>Criar uma Vaga</a></div>
-
-                </div>
-
-                <div class="div-table">
-                    <table class="table table-borderless table-hover">
-                        <thead >
-                            <tr >
-                                <th>Nome Vaga</th>
-                                <th>Localização</th>
-                                <th>Tipo Vaga</th>
-                                <th>Data criada</th>
-                                <th>Candidatos</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody >
-                            <tr >
-                                <td class="table-nome-vaga">Junior Back End Developer</td>
-                                <td class="table-local-vaga"> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            location_on
-                                        </span> 
-                                        São Paulo
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            work_outline
-                                        </span> 
-                                        Contrato
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div> 26 Maio,2022 </div>
-                                </td>
-                                <td>32 
-                                    <span class="span-valor-vagas-novas">
-                                        9 novos
-                                    </span>
-                                </td>
-                                <td class="table-edit-vaga">
-                                    <span class="material-icons-outlined">
-                                    more_horiz
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr >
-                                <td class="table-nome-vaga">Junior Back End Developer</td>
-                                <td class="table-local-vaga"> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            location_on
-                                        </span> 
-                                        São Paulo
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            work_outline
-                                        </span> 
-                                        Contrato
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div> 26 Maio,2022 </div>
-                                </td>
-                                <td>32 
-                                    <span class="span-valor-vagas-novas">
-                                        9 novos
-                                    </span>
-                                </td>
-                                <td class="table-edit-vaga">
-                                    <span class="material-icons-outlined">
-                                    more_horiz
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr >
-                                <td class="table-nome-vaga">Junior Back End Developer</td>
-                                <td class="table-local-vaga"> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            location_on
-                                        </span> 
-                                        São Paulo
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            work_outline
-                                        </span> 
-                                        Contrato
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div> 26 Maio,2022 </div>
-                                </td>
-                                <td>32 
-                                    <span class="span-valor-vagas-novas">
-                                        9 novos
-                                    </span>
-                                </td>
-                                <td class="table-edit-vaga">
-                                    <span class="material-icons-outlined">
-                                    more_horiz
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr >
-                                <td class="table-nome-vaga">Junior Back End Developer</td>
-                                <td class="table-local-vaga"> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            location_on
-                                        </span> 
-                                        São Paulo
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            work_outline
-                                        </span> 
-                                        Contrato
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div> 26 Maio,2022 </div>
-                                </td>
-                                <td>32 
-                                    <span class="span-valor-vagas-novas">
-                                        9 novos
-                                    </span>
-                                </td>
-                                <td class="table-edit-vaga">
-                                    <span class="material-icons-outlined">
-                                    more_horiz
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr >
-                                <td class="table-nome-vaga">Junior Back End Developer</td>
-                                <td class="table-local-vaga"> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            location_on
-                                        </span> 
-                                        São Paulo
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            work_outline
-                                        </span> 
-                                        Contrato
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div> 26 Maio,2022 </div>
-                                </td>
-                                <td>32 
-                                    <span class="span-valor-vagas-novas">
-                                        9 novos
-                                    </span>
-                                </td>
-                                <td class="table-edit-vaga">
-                                    <span class="material-icons-outlined">
-                                    more_horiz
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr >
-                                <td class="table-nome-vaga">Junior Back End Developer</td>
-                                <td class="table-local-vaga"> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            location_on
-                                        </span> 
-                                        São Paulo
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            work_outline
-                                        </span> 
-                                        Contrato
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div> 26 Maio,2022 </div>
-                                </td>
-                                <td>32 
-                                    <span class="span-valor-vagas-novas">
-                                        9 novos
-                                    </span>
-                                </td>
-                                <td class="table-edit-vaga">
-                                    <span class="material-icons-outlined">
-                                    more_horiz
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr >
-                                <td class="table-nome-vaga">Junior Back End Developer</td>
-                                <td class="table-local-vaga"> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            location_on
-                                        </span> 
-                                        São Paulo
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            work_outline
-                                        </span> 
-                                        Contrato
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div> 26 Maio,2022 </div>
-                                </td>
-                                <td>32 
-                                    <span class="span-valor-vagas-novas">
-                                        9 novos
-                                    </span>
-                                </td>
-                                <td class="table-edit-vaga">
-                                    <span class="material-icons-outlined">
-                                    more_horiz
-                                    </span>
-                                </td>
-                            </tr>
-                            
-                            <tr >
-                                <td class="table-nome-vaga">Junior Back End Developer</td>
-                                <td class="table-local-vaga"> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            location_on
-                                        </span> 
-                                        São Paulo
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div class="div-valor-box">
-                                        <span class="material-icons-outlined">
-                                            work_outline
-                                        </span> 
-                                        Contrato
-                                    </div>
-                                </td>
-                                <td> 
-                                    <div> 26 Maio,2022 </div>
-                                </td>
-                                <td>32 
-                                    <span class="span-valor-vagas-novas">
-                                        9 novos
-                                    </span>
-                                </td>
-                                <td class="table-edit-vaga">
-                                    <span class="material-icons-outlined">
-                                    more_horiz
-                                    </span>
-                                </td>
-                            </tr>
-                            
-
-
-                        </tbody>
-                    </table>
-
-                    <div class="div-paginate">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                              <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-                              <li class="page-item"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
-                            </ul>
-                          </nav>
-                        
-                    </div>
-                </div>
-
+              <a href="/templates/dashboard.html"
+                ><span class="material-icons-round">grid_view</span>
+                Dashboard</a
+              >
             </div>
-            
+          </div>
+          <div class="div-btn-menu">
+            <div>
+              <a href="/templates/listagem_vagas.html"
+                ><span class="material-icons-round">people</span> Recrutamento e
+                Seleção</a
+              >
+            </div>
+          </div>
+          <div class="div-btn-menu">
+            <div>
+              <a href="/templates/listagem_normas.html"
+                ><span class="material-icons-round">fact_check</span> Normas
+                Organizacionais</a
+              >
+            </div>
+          </div>
         </div>
 
+        <hr />
+        <!-- SUPPORT -->
+        <div
+          style="
+            position: fixed;
+            bottom: 0;
+            margin-bottom: 5px;
+            font-size: 12px;
+          "
+        >
+          <div style="color: #bec4d2; font-size: 12px; margin-bottom: 10px">
+            <span> SUPPORT</span>
+          </div>
+
+          <div class="div-btn-menu-support">
+            <div>
+              <a href=""
+                ><span class="material-icons-round">email</span> Mensagens</a
+              >
+            </div>
+          </div>
+          <div class="div-btn-menu-support">
+            <div>
+              <a href=""
+                ><span class="material-icons-round">phone</span> Ajuda</a
+              >
+            </div>
+          </div>
+          <div class="div-btn-menu-support">
+            <div>
+              <a href=""
+                ><span class="material-icons-round">settings</span>
+                Configurações</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%">
+        <!-- Div Header -->
+        <div class="div-header">
+          <!-- Div Search -->
+          <div class="div-search">
+            <div>
+              <span class="material-icons-round icon-search">search</span>
+              <input type="text" placeholder="Pesquisar palavras chaves" />
+            </div>
+          </div>
+
+          <!-- Div Notificação e Usuario -->
+          <div
+            style="
+              display: flex;
+              margin-right: 30px;
+              padding: 3px;
+              align-items: center;
+            "
+          >
+            <div class="div-notifications">
+              <span class="material-icons-round">notifications</span>
+            </div>
+
+            <!-- Div Dropdown Usuario -->
+            <div style="display: flex; align-items: center">
+              <div class="dropdown" style="border-left: 1px solid #ebedf1">
+                <a
+                  class="btn dropdown-toggle dropdown-user"
+                  type="button"
+                  id="dropdownheaderUser"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="div-user-img"></div>
+                  <div>
+                        <div>
+
+                            <span class="span-name-user">Júlia Albuquerque</span>
+                            <span class="material-icons-round"> expand_more </span>
+                        </div>
+                        <div style="font-size: 12px;    text-align: initial; color:#bec4d2;"><span >Analista de RH</span></div>
+                    </div>                    
+                  
+                </a>
+                
+                <ul class="dropdown-menu" aria-labelledby="dropdownheaderUser">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      style="display: flex; align-items: center"
+                    >
+                      <span class="material-icons-round">logout</span>
+                      <span>Sair</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Div Content -->
+        <div>
+          <div
+            style="display: flex; justify-content: space-between; padding: 20px"
+          >
+            <div style="font-size: 24px; font-weight: 500">Listagem Vagas</div>
+            <div class="div-cria-vaga">
+              <a class="a-cria-vaga" href="">
+                <span
+                  class="material-icons-outlined"
+                  style="margin-right: 10px"
+                >
+                  control_point </span
+                >Criar uma Vaga</a
+              >
+            </div>
+          </div>
+
+          <div class="div-table">
+            <table class="table table-borderless table-hover">
+              <thead>
+                <tr>
+                  <th>Nome Vaga</th>
+                  <th>Localização</th>
+                  <th>Tipo Vaga</th>
+                  <th>Data criada</th>
+                  <th>Candidatos</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-nome-vaga" data-toggle="modal" data-target="#modalVagas">Junior Back End Developer</td>
+                  <td class="table-local-vaga">
+                    <div class="div-valor-box">
+                      <span class="material-icons-outlined"> location_on </span>
+                      São Paulo
+                    </div>
+                  </td>
+                  <td>
+                    <div class="div-valor-box">
+                      <span class="material-icons-outlined">
+                        work_outline
+                      </span>
+                      Contrato
+                    </div>
+                  </td>
+                  <td>
+                    <div>26 Maio,2022</div>
+                  </td>
+                  <td>
+                    32
+                    <span class="span-valor-vagas-novas"> 9 novos </span>
+                  </td>
+                  <td class="table-edit-vaga">
+                    <span class="material-icons-outlined"> more_horiz </span>
+                  </td>
+                </tr>
+
+              
+              </tbody>
+            </table>
+
+            <div class="div-paginate">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Próxima</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Button trigger modal -->
+         
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="modalVagas"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalVagasLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog"
+              role="document"
+              style="max-width: 60% !important"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalVagasLabel">
+                    Junior Back End Developer
+                  </h5>
+                  <button
+                    type="btn btn-success"
+                    class="close btn btn-primary"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                    style=" background-color: #488ef7 ;border-color: #488ef7;"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Div info -->
+                  <div
+                    style="
+                      border-radius: 10px;
+                      border: 1px solid #ebedf1;
+                      padding: 20px;
+                    "
+                  >
+                    <div
+                      style="
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                      "
+                    >
+                      Detalhes
+                    </div>
+
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: 33.3% 33.3% 33.3%;
+                      "
+                    >
+                      <div>Localização: <span style="font-weight: 500;"> São Paulo </span></div>
+                      <div>Nível: <span style="font-weight: 500;"> Junior/CLT </span></div>
+                      <div>Salário: <span style="font-weight: 500;"> R$4.0000,00 </span></div>
+                      <div>Data publicação: <span style="font-weight: 500;"> 26/05/2022 </span></div>
+                      <div>Status vaga: <span style="font-weight: 500;">Ativa</span></div>
+                      <div>Gestor: <span style="font-weight: 500;">Lucas </span></div>
+
+                    </div>
+                  </div>
+                  <!-- Div Desc Vaga -->
+                  <div
+                    style="
+                      border-radius: 10px;
+                      border: 1px solid #ebedf1;
+                      padding: 20px;
+                      margin-top: 20px;
+                    "
+                  >
+                    <div>
+                      <div style="font-weight: 500; margin-bottom: 10px; display: flex; justify-content: space-between;">
+                        <div> Descrição da Vaga</div>
+                        <span class="material-icons-round" style="color: #bec4d2; cursor: pointer;">
+                            edit
+                            </span>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Deserunt voluptatum eos veritatis animi
+                        consequuntur architecto fugit obcaecati pariatur ducimus
+                        ratione quia autem sit quas, iure minima, ipsum velit
+                        libero enim.
+                      </p>
+                    </div>
+                    <hr />
+
+                    <div>
+                      <div style="font-weight: 500; margin-bottom: 10px">
+                        Responsabilidade e Atribuições
+                      </div>
+                      <p>
+                        <span> Sobre a Vaga </span><br>
+                        Acreditamos num mundo conectado e
+                        descomplicado, com soluções tecnológicas e inovadoras
+                        para facilitar a vida dos brasileiros. Para isso
+                        acontecer esperamos do seu dia a dia:
+
+                        <ul>
+                            <li>Desenhar, codar, testar e operar os softwares;</li>
+                            <li>Participar da discussão de escopo junto com o PM e priorizar as tarefas, focado sempre no cliente;</li>
+                            <li>Investigar e resolver problemas de escalabilidade, mantenabilidade e confiabilidade.</li>
+                        </ul>
+                      </p>
+                      <p>
+                          <span>Sobre Você</span><br>
+                          Procuramos alguém com paixão para fazer essa transformação na vida das pessoas, que entenda o dia a dia difícil dos nossos clientes e acredita na força do brasileiro que vai à luta, independente de sol, chuva, trânsito e perrengues da vida. Além de tudo isso tem alguns pontos mais techs:
+                            <ul>
+                               <li> Facilidade em se comunicar, aprender, ensinar e trabalhar em equipe;</li>
+                               <li>Pensamento analítico e proatividade para melhorar o que não está bom;</li>
+                               <li>Gostar de escrever testes e compromisso com a qualidade das entregas.</li>
+                               <li>Cultura ágil e saber se adaptar às mudanças;</li>
+                               <li>Conhecimentos sólidos de orientação a objetos e padrões de desenvolvimento de software;</li>
+                               <li>Experiência com arquitetura de micro-serviços;</li>
+                               <li>Experiência com design de APIs RESTful;</li>
+                               <li>Experiência com integração e entrega contínua;</li>
+                               <li>Cultura devops e senso de dono na manutenção e monitoramento do ambiente de produção.</li>
+                            </ul>
+
+                      </p>
+
+                      <div style="font-weight: 500; margin-bottom: 10px">
+                        Requisitos e Qualificações
+                      </div>
+                      <p>
+                        <ul>
+                            <li> Experiência em desenvolvimento Backend.</li>
+                            <li> Conhecimento e boa experiência em Node.js e Typescript  </li>
+                            <li> Conhecimento de arquitetura de Microsserviços.</li>
+                            <li> Conhecimento em API Restful.</li>
+                            <li> Conhecimentos básicos de escalabilidade de software.</li>
+                            <li> Conhecimento em banco de dados relacionais (MYSQL) .</li>
+                            <li> Conhecimentos em git.</li>
+                            
+                        </ul>
+
+                      </p>
+
+                      <hr />
+                      <div style="font-weight: 500; margin-bottom: 10px">
+                        Informações Adicionais
+                      </div>
+                      <p>
+
+                        <ul>
+                            <li> Plano de saúde Unimed ;</li>
+                            <li>Assistência Médica e Odontológica na empresa;</li>
+                            <li>Seguro de vida;</li>
+                            <li>Vale transporte;</li>
+                            <li>Restaurante na empresa;</li>
+                            <li>Convênio farmácia;</li>
+                            <li>Parceiros descontos;</li>
+                            <li>Associação Desportiva;</li>
+                            <li>Auxílio educação;</li>
+                            <li>PLR - Participação de Lucros e Resultados.</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Voltar
+                  </button>
+                  <button type="button" class="btn btn-success" >
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
