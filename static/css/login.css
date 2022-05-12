@@ -1,0 +1,87 @@
+body,head{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8fafb !important;
+
+}
+.div-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-login{
+    width: 50%;
+    text-align: center;
+}
+.div-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #245ee7;
+    color: white;
+    
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    height: 40px;
+    text-decoration: none;
+}
+.botao-entrar:hover{
+    color: white;
+    background-color: #1a4396;
+}
+
+.input-login input{
+    width: 50%;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #ebedf1;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.input-login input:focus{
+    background-color: aliceblue;
+    border: 1px solid #1a4396;
+
+}
+
+.div-lembrar-senha{
+    display: flex;
+    justify-content: center;
+}
+
+.div-lembrar-senha-filha{
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+.div-lembrar-senha-filha div{
+
+    display: flex;
+    align-items: center;
+}
+
+.div-lembrar-senha-filha div span{
+
+    color: #245ee7;
+}
+
+.div-lembrar-senha-filha div label{
+
+    
+    font-weight: 500;
+    margin-left: 8px;
+}
